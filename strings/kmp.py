@@ -3,6 +3,8 @@
 
 
 # get next array
+#  abacdab
+# [-1, 0, -1, 1, 0, -1, 0]
 def get_next(p):
     """p is the pattern string"""
     next_array = [-1] * len(p)
@@ -45,7 +47,7 @@ def kmp_search(s, p):
 
 
 def main():
-    print(get_next('bcda'))
+    print(get_next('abacdab'))
     print(kmp_search('abcdabcd', 'bcda'))
 
 
